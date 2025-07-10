@@ -12,7 +12,8 @@ export class ButtonComponent {
 
   @Output() click = new EventEmitter<void>();
 
-  onClick(): void {
+  onClick(event: Event): void {
+    event.stopPropagation();
     this.click.emit();
   }
 }
