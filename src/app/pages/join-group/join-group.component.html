@@ -1,0 +1,9 @@
+<span class="material-icons" (click)="goBack()">arrow_back</span>
+<div class="container">
+  <div *ngFor="let group of groups" class="group-container">
+    <div class="title">
+      <p class="jua-regular">{{group.name}}</p>
+    <app-button label="Request" (click)="requestJoin(group)" color="warning"></app-button>
+    </div>
+  </div>
+</div>

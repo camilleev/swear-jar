@@ -1,0 +1,25 @@
+@use "../../../app/shared/styles/colors" as color;
+
+.modal {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+
+  .logout{
+    text-align: center;
+    font-size: 1rem;
+    color: color.$primary-nice-blue;
+    cursor: pointer;
+    margin: 0px;
+  }
+
+  .group-edition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+}
+

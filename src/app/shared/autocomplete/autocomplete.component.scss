@@ -1,0 +1,44 @@
+@use "../styles/colors" as color;
+
+input{
+  all: unset;
+  font-family: "Jua", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 2px solid color.$black;
+  height: 40px;
+  width: 300px;
+
+  &::placeholder {
+    color: color.$black;
+  }
+}
+
+ul {
+  position: absolute;
+  background-color: white;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  z-index: 1000;
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+  border-radius: 6px;
+}
+li {
+  font-family: 'jua';
+  font-size: 1.5rem;
+  padding: 4px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-items {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

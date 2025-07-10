@@ -1,0 +1,24 @@
+@use "../../shared/styles/colors" as color;
+
+.container{
+
+  .wrapper-forgot-password {
+    width: 300px;
+    text-align: end;
+    .forgot-password{
+      font-size: 1rem;
+      color: color.$primary-nice-blue;
+        cursor: pointer;
+    }
+  }
+
+}
+.create-account{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: color.$primary-nice-blue;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <app-input [(ngModel)]="email" [placeholder]="'Email'"></app-input>
+  <app-input [(ngModel)]="password" [placeholder]="'Password'" [hide]="true"></app-input>
+  <div class="wrapper-forgot-password">
+    <p class="forgot-password jua-regular">Forgot password ?</p>
+  </div>
+  <app-button label="Sign in" (click)="login()" color="warning"></app-button>
+</div>
+<p [routerLink]="'/account-creation'" class="create-account jua-regular">Create account</p>

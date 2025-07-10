@@ -1,0 +1,85 @@
+@use "./app/shared/styles/colors" as color;
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: color.$primary-sorcerer;
+  height: 100vh;
+  width: 100vw;
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-dialog-container .mdc-dialog__surface{
+  border-radius: 23px !important;
+  box-shadow: none;
+}
+
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 80vh;
+  min-height: 20vh;
+
+  .modal-title{
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+.group-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.material-icons{
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  p {
+    font-size: 20px;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,11 @@
+<span class="material-icons" (click)="goBack()">arrow_back</span>
+<div class="container">
+  <form [formGroup]="formGroup">
+    <app-input formControlName="name" [placeholder]="'Group name'"></app-input>
+    <app-autocomplete [allowItemRemoval]="false" [placeholder]="'Search player'" [suggestions]="usersList" [selectedItemsControl]="membersArray"></app-autocomplete>
+    <div *ngIf="formGroup.invalid">
+      <p class="jua-regular error-message">Please fill in all required fields.</p>
+    </div>
+  </form>
+    <app-button label="Save changes" (click)="saveChanges()" color="warning"></app-button>
+</div>

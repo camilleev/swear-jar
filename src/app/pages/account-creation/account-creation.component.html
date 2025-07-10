@@ -1,0 +1,6 @@
+<div class="container">
+  <app-input [(ngModel)]="username" [placeholder]="'Username'"></app-input>
+  <app-input [(ngModel)]="email" [placeholder]="'Email'"></app-input>
+  <app-input [(ngModel)]="password" [placeholder]="'Password'" [hide]="true"></app-input>
+  <app-button label="Save" (click)="createAccount()" color="warning"></app-button>
+</div>

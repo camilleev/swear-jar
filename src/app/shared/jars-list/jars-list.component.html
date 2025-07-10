@@ -1,0 +1,15 @@
+<div class="modal">
+  <h1 class="jua-regular modal-title">Voir la jar de : </h1>
+
+  <div *ngFor="let group of jarsList" class="group-container">
+    <div class="title">
+      <p class="jua-regular">{{group.name}}</p>
+      <span *ngIf="group.id === groupFavId" class="material-icons selected-star">star</span>
+    </div>
+    <div class="members-container">
+      <ng-container *ngFor="let member of group.members">
+        <app-button [label]="member.username" [color]="currentJarId === member.jarId ? 'warning' : 'primary'" (click)="navigateTo(member.jarId)"></app-button>
+      </ng-container>
+    </div>
+  </div>
+</div>

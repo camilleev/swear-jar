@@ -1,0 +1,47 @@
+@use "../styles/colors" as color;
+button {
+  all: unset;
+  font-family: 'jua';
+  font-size: 1.5rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 3px solid color.$black;
+  position: relative;
+  cursor: pointer;
+
+  &.warning{
+    background-color: color.$warning-samoan-sun;
+  }
+
+  &.primary{
+    background-color: color.$primary-dithered-sky;
+  }
+
+  &.danger{
+    background-color: color.$danger-akuma;
+  }
+}
+
+button::after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: -6px;
+  left: 0px;
+  right: -6px;
+  border: 3px solid color.$black;
+  border-radius: 12px;
+  z-index: -1; /* Derrière le bouton */
+}
+
+button.warning::after {
+  background-color: color.$warning-samoan-sun;
+}
+
+button.primary::after {
+  background-color: color.$primary-nice-blue;
+}
+
+button.danger::after {
+  background-color: color.$danger-bloodthirsty-vampire;
+}

@@ -1,0 +1,16 @@
+<div class="modal">
+  <h1 class="jua-regular modal-title">Demande d'ajout </h1>
+  <div *ngFor="let request of requests" class="group-container">
+      <div class="title">
+        <p  class="jua-regular">{{request.fromUsername}} {{request.type === RequestTypeEnum.INVITE_REQUEST ? 'souhaite vous ajouter au groupe' : 'souhaite rejoindre votre groupe'}}: {{request.groupName}}</p>
+      </div>
+      <div class="members-container">
+        <app-button label="Oui" color="warning" (click)="acceptRequest(request)"></app-button>
+        <app-button label="Non" color="danger" (click)="rejectRequest(request.id)"></app-button>
+      </div>
+
+  </div>
+  <div *ngIf="requests.length === 0">
+    <p  class="jua-regular">Aucune demande en cours</p>
+  </div>
+</div>

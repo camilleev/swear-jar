@@ -1,0 +1,10 @@
+<div class="container">
+  <form [formGroup]="formGroup">
+    <app-input formControlName="name" [placeholder]="'Group name'"></app-input>
+    <app-autocomplete [placeholder]="'Search player'" [suggestions]="usersList" [selectedItemsControl]="membersArray"></app-autocomplete>
+    <div *ngIf="formSubmitted && formGroup.invalid">
+      <p class="jua-regular error-message">Please fill in all required fields.</p>
+    </div>
+  </form>
+  <app-button label="Create group" (click)="createGroup()" color="warning"></app-button>
+</div>

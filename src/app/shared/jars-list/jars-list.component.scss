@@ -1,0 +1,11 @@
+@use "../../../app/shared/styles/colors" as color;
+
+.members-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selected-star {
+  color: color.$warning-samoan-sun
+}

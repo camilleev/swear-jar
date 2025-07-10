@@ -1,0 +1,16 @@
+<div (focusout)="hideSuggestions()" style="position: relative">
+
+  <input [placeholder]="placeholder" [(ngModel)]="searchText" (input)="filterSuggestions()"/>
+
+  <ul *ngIf="showSuggestions">
+     <li *ngFor="let s of filteredSuggestions" (click)="selectionSuggestion(s)">
+    {{ s.username }}
+    </li>
+  </ul>
+
+  <div class="selected-items">
+    <div  *ngFor="let item of selectedItemsControl.value; let i = index" >
+      <app-button [label]="item.username" color="primary" (click)="removeItem(i)"></app-button>
+    </div>
+  </div>
+</div>

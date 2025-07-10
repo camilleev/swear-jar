@@ -1,0 +1,8 @@
+@use "../../shared/styles/colors" as color;
+.container{
+  .error-message {
+    color: color.$danger-akuma;
+    text-align: end;
+    margin-bottom: 0px;
+  }
+}

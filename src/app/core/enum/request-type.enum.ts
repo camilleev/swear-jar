@@ -1,0 +1,4 @@
+export enum RequestTypeEnum {
+  JOIN_REQUEST = 'JOIN_REQUEST',
+  INVITE_REQUEST = 'INVITE_REQUEST'
+}
