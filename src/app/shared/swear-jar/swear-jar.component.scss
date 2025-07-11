@@ -12,7 +12,8 @@
 }
 .menu {
   position: absolute;
-  top: 0px;
+  top: 30px;
+  right: 30px;
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
@@ -55,18 +56,19 @@
   display: flex;
   flex-direction: column;
   z-index: 3;
-  padding: 20px;
+  padding: 6px;
+  padding-bottom: 10px;
   background-image: url('../../../assets/background.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   div {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     padding-top: 10px;
   }
 }
@@ -92,7 +94,8 @@
   position: absolute;
   object-fit: contain;
   width: 342px;
-  height: 458px;
+  // height: 458px;
+  height: 306px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -103,7 +106,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 437.5px;
+  // height: 437.5px;
+  height: 290px;
   object-fit: contain;
   z-index: 3;
   pointer-events: none; /* permet de cliquer à travers */
@@ -112,7 +116,7 @@
   position: absolute;
   background-color: #ffc107; /* Jaune */
   border-radius: 10px;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   z-index: 10
 }
@@ -143,9 +147,9 @@ button {
 }
 
 .count{
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .coin-img{
-  height: 70px;
+  height: 50px;
 }

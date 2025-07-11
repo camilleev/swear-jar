@@ -151,13 +151,13 @@ export class SwearJarComponent implements AfterViewInit, OnInit {
     const x = canvasWidth / 2;
     const y = -20;
 
-    const ovale = this.createEllipseBody(x, y, 36, 32, {
+    const ovale = this.createEllipseBody(x, y, 27, 24, {
       restitution: 0.5,
       render: {
         sprite: {
-          texture: 'assets/coin2.png',
-          xScale: 0.5,
-          yScale: 0.5,
+          texture: 'assets/coin-sm.png',
+          xScale: 1,
+          yScale: 1,
         },
       },
     });
@@ -178,13 +178,13 @@ export class SwearJarComponent implements AfterViewInit, OnInit {
     const x = canvasWidth / 2 + offset;
     const y = -20;
 
-    const ovale = this.createEllipseBody(x, y, 36, 32, {
+    const ovale = this.createEllipseBody(x, y, 27, 24, {
       restitution: 0.5,
       render: {
         sprite: {
-          texture: 'assets/coin2.png',
-          xScale: 0.5,
-          yScale: 0.5,
+          texture: 'assets/coin-sm.png',
+          xScale: 1,
+          yScale: 1,
         },
       },
     });
