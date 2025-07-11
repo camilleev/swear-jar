@@ -9,7 +9,11 @@ import { GroupEditionComponent } from './pages/group-edition/group-edition.compo
 import { JoinGroupComponent } from './pages/join-group/join-group.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  {
+    path: '',
+    redirectTo: '/login',
+    pathMatch: 'full',
+  },
   { path: 'login', component: LoginComponent },
   { path: 'jar/:id', component: SwearJarComponent },
   { path: 'first-login', component: FirstLoginComponent },
@@ -21,6 +25,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
